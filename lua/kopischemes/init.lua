@@ -9,7 +9,7 @@ M.setup = function (opts)
 	vim.opt.runtimepath:append(kopipath .. name)
 	require(name).setup(setup)
     else
-	print(name .. "is not a known colorscheme")
+	print("You need to enter the name of a colorscheme!")
     end
 
 end
