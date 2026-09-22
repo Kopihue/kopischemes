@@ -19,7 +19,7 @@ M.apply = function (opts) local palette = require("after-dark.palette")
 	["Identifier"]		= { fg = palette.base08 },
 	["CursorLine"]		= { bg = palette.base01 },
 	["CursorLineNr"]	= { fg = palette.base12 },
-	["Visual"]		= { bg = palette.base01 },
+	["Visual"]		= { bg = palette.base02 },
 	["Search"]		= { bg = palette.base02 },
 	["CurSearch"]		= { bg = palette.base02 },
 	["Comment"]		= { fg = palette.base16 },
@@ -36,7 +36,7 @@ M.apply = function (opts) local palette = require("after-dark.palette")
 	["@function.builtin.python"]		= { fg = palette.base12 },
 	["@constructor.python"]			= { fg = palette.base12 },
 	["@variable.builtin.python"]		= { fg = palette.base13 },
-	["@type.builtin.python"]		= { fg = palette.base09 },
+	["@type.builtin.python"]		= { fg = palette.base15 },
 
 	-- ibl
 	["IblIndent"] = { fg = palette.base02 },
