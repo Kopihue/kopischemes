@@ -27,6 +27,10 @@ M.apply = function (opts)
 	["Type"]   	 	= { fg = palette.base15 },
 	["WinSeparator"] 	= { fg = palette.base01 },
 	["LineNr"]       	= { fg = palette.base02 },
+	["EndOfBuffer"]		= { fg = palette.base02 },
+	["StatusLine"]  	= { bg = palette.base01, fg = palette.base04 },
+	["StatusLineNC"]  	= { bg = palette.base01, fg = palette.base04 },
+	["MsgArea"] 		= { fg = palette.base04 },
 
 	-- python
 	["@module.python"]			= { fg = palette.base10 },
