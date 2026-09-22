@@ -1,7 +1,6 @@
 local M = {}
 
-M.apply = function (opts)
-    local palette = require("after-dark.palette")
+M.apply = function (opts) local palette = require("after-dark.palette")
 
     local transparency = opts.transparency and "none" or palette.base00
     local bold = opts.bold or false
@@ -37,6 +36,7 @@ M.apply = function (opts)
 	["@function.builtin.python"]		= { fg = palette.base12 },
 	["@constructor.python"]			= { fg = palette.base12 },
 	["@variable.builtin.python"]		= { fg = palette.base13 },
+	["@type.builtin.python"]		= { fg = palette.base09 },
 
 	-- ibl
 	["IblIndent"] = { fg = palette.base02 },
