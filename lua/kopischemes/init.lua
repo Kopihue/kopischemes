@@ -1,12 +1,15 @@
 local M = {}
 
 M.setup = function (opts)
-    name  = opts["name"]
-    setup = opts["setup"]
+    local name  = opts["name"]
+    local setup = opts["setup"]
 
     if name then
-	local kopipath = "~/.local/share/nvim/plugins/kopischemes/lua/kopischemes/"
-	vim.opt.runtimepath:append(kopipath .. name)
+	-- correctly get the path of this module file
+	local current_file = debug.getinfo(1, "S").source:sub(2)
+	local kopipath = vim.fs.dirname(current_file)
+
+	vim.opt.runtimepath:append(vim.fs.joinpath(kopipath, name))
 	require(name).setup(setup)
     else
 	print("You need to enter the name of a colorscheme!")
