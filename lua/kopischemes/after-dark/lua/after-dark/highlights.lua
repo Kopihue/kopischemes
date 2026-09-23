@@ -37,7 +37,7 @@ M.apply = function (opts) local palette = require("after-dark.palette")
 	["@constructor.python"]			= { fg = palette.base12 },
 	["@variable.builtin.python"]		= { fg = palette.base13 },
 	["@type.builtin.python"]		= { fg = palette.base15 },
-	["@variable.paramenter.python"]		= { fg = palette.base08 },
+	["@variable.parameter.python"]		= { fg = palette.base08 },
 
 	-- ibl
 	["IblIndent"] = { fg = palette.base02 },
