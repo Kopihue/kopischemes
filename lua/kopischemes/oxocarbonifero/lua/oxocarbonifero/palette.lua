@@ -10,10 +10,10 @@ local palette = {
     base08 = "#3ddbd9",
     base09 = "#ff7eb6",
     base10 = "#ee5396",
-    base11 = "#749AE8",
+    base11 = "#33b1ff",
     base12 = "#42be65",
     base13 = "#be95ff",
-    base14 = "#82cfff",
+    base14 = "#78a9ff",
 }
 
 return palette

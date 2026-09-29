@@ -12,7 +12,7 @@ M.apply = function(opts)
 	["Normal"]       = { bg = transparency },
 	["Function"]     = { fg = palette.base09 , bold = bold },
 	["Special"]      = { fg = palette.base11 },
-	["Statement"]    = { fg = palette.base11 },
+	["Statement"]    = { fg = palette.base14 },
 	["Delimiter"]    = { fg = palette.base08 },
 	["String"]       = { fg = palette.base13 },
 	["Operator"]     = { fg = palette.base10 },
@@ -36,8 +36,8 @@ M.apply = function(opts)
 	-- lsp
 	["DiagnosticSignError"]        = { fg = palette.base10 },
 	["DiagnosticVirtualTextError"] = { fg = palette.base10 },
-	["DiagnosticSignWarn"] 	       = { fg = palette.base15 },
-	["DiagnosticVirtualTextWarn"]  = { fg = palette.base15 },
+	["DiagnosticSignWarn"] 	       = { fg = palette.base09 },
+	["DiagnosticVirtualTextWarn"]  = { fg = palette.base09 },
 	["DiagnosticSignHint"] 	       = { fg = palette.base07 },
 	["DiagnosticVirtualTextHint"]  = { fg = palette.base07 },
 	["DiagnosticSignInfo"] 	       = { fg = palette.base14 },
@@ -85,16 +85,19 @@ M.apply = function(opts)
 	["@function.builtin.lua"] = { fg = palette.base09, bold = bold },
 
 	-- python
-	["@module.python"] 	     = { fg = palette.base15 },
-	["@type.python"]    	     = { fg = palette.base07, bold = bold },
-	["@type.builtin.python"]     = { fg = palette.base07, bold = bold },
-	["@function.builtin.python"] = { fg = palette.base09, bold = bold },
-	["@constructor.python"]      = { fg = palette.base09, bold = bold },
-	["@constant.builtin.python"] = { fg = palette.base08 },
-	["@variable.builtin.python"] = { fg = palette.base15 },
+	["@module.python"] 	       = { fg = palette.base15 },
+	["@type.python"]    	       = { fg = palette.base07, bold = bold },
+	["@type.builtin.python"]       = { fg = palette.base07, bold = bold },
+	["@function.builtin.python"]   = { fg = palette.base09, bold = bold },
+	["@constructor.python"]        = { fg = palette.base09, bold = bold },
+	["@constant.builtin.python"]   = { fg = palette.base08 },
+	["@variable.builtin.python"]   = { fg = palette.base10 },
+	["@variable.parameter.python"] = { fg = palette.base12 },
 
 	-- c
-	["@type.builtin.c"] = { fg = palette.base15 },
+	["@type.builtin.c"] = { fg = palette.base07 },
+	["@number.c"] = { fg = palette.base10 },
+	["@character.c"] = { fg = palette.base12 },
     }
 
     for field, value in pairs(highlights) do
