@@ -24,8 +24,8 @@ M.apply = function(opts)
 	["CursorLine"]   = { bg = transparency },
 	["Visual"]       = { bg = palette.base02 },
 	["WinSeparator"] = { bg = transparency, fg = palette.base00 },
-	["StatusLine"]   = { bg = palette.base00 },
-	["StatusLineNC"] = { bg = palette.base00 },
+	["StatusLine"]   = { bg = transparency },
+	["StatusLineNC"] = { bg = transparency },
 	["Comment"]      = { fg = palette.base03, italic = italic },
 	["Title"]        = { fg = palette.base08 },
 	["Search"]       = { bg = palette.base02 },
@@ -85,7 +85,7 @@ M.apply = function(opts)
 	["@function.builtin.lua"] = { fg = palette.base09, bold = bold },
 
 	-- python
-	["@module.python"] 	       = { fg = palette.base15 },
+	["@module.python"] 	       = { fg = palette.base09 },
 	["@type.python"]    	       = { fg = palette.base07, bold = bold },
 	["@type.builtin.python"]       = { fg = palette.base07, bold = bold },
 	["@function.builtin.python"]   = { fg = palette.base09, bold = bold },

@@ -26,7 +26,6 @@ local highlights = function(opts)
 	["CursorLine"] = { bg = background },
 	["CursorLineNr"] = { fg = line_number },
 	["LineNr"] = { fg = palette.base02 },
-	["Pmenu"] = { bg = background },
 	["Directory"] = { fg = palette.base09 },
 	["Visual"] = { bg = palette.base00 },
 	["Search"] = { bg = palette.base00 },
